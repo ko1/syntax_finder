@@ -2,7 +2,7 @@ require 'syntax_finder'
 
 # Check def with paren or no paren
 
-class IfThenFinder < SyntaxFinder
+class DefParenFinder < SyntaxFinder
   def look node
     if node.type == :def_node
       has_params = !node.parameters.nil?

@@ -2,7 +2,7 @@ require 'syntax_finder'
 
 # Check call with paren or no paren
 
-class IfThenFinder < SyntaxFinder
+class CallParenFinder < SyntaxFinder
   def look node
     if node.type == :call_node
       has_params = !node.arguments.nil?

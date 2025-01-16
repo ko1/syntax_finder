@@ -32,7 +32,7 @@ end
 and run the script with Ruby script file names listed in STDIN like this.
 
 ```sh
-$ time find ruby/ruby -name '*.rb' | ruby samples/if_then_finder.rb
+$ find ruby/ruby -name '*.rb' | ruby samples/if_then_finder.rb
 [[[:FILES, 7_705], [:FAILED_PARSE, 3]],
  [["if", 14_886], ["?:", 1_806], ["elsif", 922], ["then", 184]]]
 ```
@@ -40,7 +40,7 @@ $ time find ruby/ruby -name '*.rb' | ruby samples/if_then_finder.rb
 In this case, with *.rb files in ruby/ruby directory, there are
 
 * There are 7_705 files
-  * but 3 files are failed because of parsing.
+  * but 3 files are failed to prase
 * In the files, there are
   * 14_886 `if` statements
   * 1_806 `?:` style if statements

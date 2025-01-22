@@ -23,7 +23,7 @@ class SyntaxFinder
   end
 
   def traverse_rest node
-    node.child_nodes.compact.each do |child|
+    node.compact_child_nodes.each do |child|
       traverse child
     end
   end 
